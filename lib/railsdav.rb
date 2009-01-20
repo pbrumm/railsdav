@@ -15,3 +15,7 @@ require 'railsdav/act_as_railsdav'
 require 'webdav/act_as_filewebdav'
 require 'webdav/file_resource'
 
+
+module ActionController
+	 ACCEPTED_HTTP_METHODS = Set.new(%w( get head put post delete options propfind proppatch lock unlock copy move mkcol ))	
+end
